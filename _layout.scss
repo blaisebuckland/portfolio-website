@@ -1,0 +1,14 @@
+* {
+    display: grid;
+}
+
+.navigation{
+    grid-area: navigation;
+
+    &__logo{
+        color: red;
+        text-decoration: none;
+    }
+
+}
+
