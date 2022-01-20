@@ -1,4 +1,40 @@
-.navigation__logo {
+* {
+  margin: 0px;
+}
+
+.nav {
+  padding: 5px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 15%;
+  background-color: rosybrown;
+}
+.nav__logo {
   color: red;
   text-decoration: none;
+}
+
+.intro {
+  height: 55%;
+  position: relative;
+}
+.intro__image {
+  height: 55% px;
+  width: 100%;
+}
+.intro__heading {
+  position: absolute;
+  top: 40px;
+  padding: 0px 15px;
+}
+.intro__subheading {
+  position: absolute;
+  top: 80px;
+  padding: 0px 15px;
+}
+.intro__button {
+  position: absolute;
+  top: 120px;
+  padding: 0px 15px;
 }
