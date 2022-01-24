@@ -21,22 +21,104 @@
   
     &__heading {
         font-family: $font-display;
+        font-size: 40px;
+        margin-left: 25px;
   
     }
   
     &__subheading {
       font-weight: 400;
+      font-size: 30px;
+      margin-left: 25px;
     }
   
     &__button {
       border-radius: 15px;
       background-color: $color-primary-light;
-      width: 80px;
+      font-size: 18px;
+      width: 75px;
+      text-align: center;
+      margin-left: 25px;
+      margin-top:10px;
+      padding: 3px;
+      box-shadow: $color-black 2px 2px;
     }
+}
+.custom-shape-divider-top-1642953899-A {
+    position: absolute;
+    top: 16vh;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.custom-shape-divider-bottom-1642954063-A {
+    position: absolute;
+    top: 12vh;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+
+}
+.custom-shape-divider-bottom-1642954063-A svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 33px;
+}
+
+.custom-shape-divider-top-1642953899-B {
+    position: absolute;
+    top: 82vh;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.custom-shape-divider-bottom-1642954063-B {
+    position: absolute;
+    top: 78vh;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+
+}
+.custom-shape-divider-bottom-1642954063-B svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 33px;
 }
 
 .main {
     &__heading {
         font-family: $font-display;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    &__heading::before, &__heading::after {
+        content: "";
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        width: 20%;
+        height: 2px;
+        background-color: $color-primary-light;
+    }
+
+    &__heading::before {
+        right: 25px;
+       
+    }
+
+    &__heading::after {
+        left: 25px;
+       
     }
 }
+
