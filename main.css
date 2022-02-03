@@ -19,6 +19,13 @@ h2 {
   height: 10vh;
   margin: 2vh 5vw;
 }
+.nav__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40vw;
+  font-size: 3vh;
+}
 
 .intro {
   width: 100%;
@@ -107,18 +114,56 @@ h2 {
 
 .nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  font-size: 6vh;
 }
 .nav__logo {
-  font-size: 2.5em;
+  position: absolute;
+  left: 5vw;
+  font-size: 6vh;
 }
-.nav__menu-icon {
-  font-size: 2.5em;
+.nav__menu {
   position: fixed;
   right: 5vw;
+  font-size: 6vh;
+  z-index: 999;
+}
+.nav__sideNav {
+  background: #FF0099;
+  position: fixed;
+  right: 0;
+  top: 0;
+  border-radius: 15px 0px 15px 15px;
+  padding: 5vw;
+  height: 30vh;
+  width: 38vw;
+  text-align: center;
+  font-size: 4vh;
+  z-index: 999;
+  opacity: 90%;
+}
+.nav__sideNav__list {
+  list-style: none;
+  margin-top: 3vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 26vh;
+  width: 100%;
+}
+.nav__sideNav__close {
+  color: #2A2627;
+  position: fixed;
+  right: 5vw;
+  font-size: 4vh;
 }
 
+@media screen and (max-width: 668px) {
+  .nav__links {
+    display: none;
+  }
+}
 .intro__image {
   height: 80vh;
   width: 100%;
