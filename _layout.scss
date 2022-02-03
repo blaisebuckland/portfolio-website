@@ -1,6 +1,14 @@
 .nav {
     height: 10vh;
     margin: 2vh 5vw;
+
+    &__links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 40vw;
+        font-size: 3vh;
+    }
 }
 
 .intro {
