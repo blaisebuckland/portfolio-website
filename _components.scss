@@ -1,19 +1,63 @@
 .nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    font-size: 6vh;
  
      &__logo{
-         font-size: 2.5em;
+        position: absolute;
+        left: 5vw;
+        font-size: 6vh;
      }
 
-     &__menu-icon {
-         font-size: 2.5em;
+     &__menu {
          position: fixed;
          right: 5vw;
+         font-size: 6vh;
+         z-index: 999;
+    }
+/*
+      &__sideNav {
+          background: $color-primary-light;
+          position: fixed;
+          right: 0;
+          top: 0;
+          border-radius: 15px 0px 15px 15px;
+          padding: 5vw;
+          height: 30vh;
+          width: 38vw;
+          text-align: center;
+          font-size: 4vh;
+          z-index: 999;
+          opacity: 90%;
 
-     }
-}
+          &__list {
+            list-style: none;
+            margin-top: 3vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 26vh;
+            width: 100%;
+          }
+
+          &__close {
+              color: $color-black;
+              position: fixed;
+              right: 5vw;
+              font-size: 4vh;
+          }
+
+      }
+*/
+      }
+      
+
+
+@media  screen and (max-width: 668px) {
+    .nav__links {
+        display: none;}
+    }
 
 .intro {
     &__image {
