@@ -7,7 +7,17 @@
      &__logo{
         position: absolute;
         left: 5vw;
-        font-size: 6vh;
+        &__1 {
+           position: relative;
+           top: -3px;
+            font-family: Island Moments;
+            font-size: 8vh;
+        }
+        &__2 {
+            position: relative;
+            left: -11px;
+            font-size: 6vh;
+        }
      }
 
      &__menu {
