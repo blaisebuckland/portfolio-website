@@ -15,7 +15,7 @@
         }
         &__2 {
             position: relative;
-            left: -11px;
+            left: -12px;
             font-size: 6vh;
         }
      }
@@ -64,7 +64,7 @@
       
 
 
-@media  screen and (max-width: 668px) {
+@media  screen and (max-width: 768px) {
     .nav__links {
         display: none;}
     }
@@ -102,16 +102,18 @@
 }
 .custom-shape-divider-top-1642953899-A {
     position: absolute;
-    top: 18vh;
+    top: 20vh;
     left: 0;
+    height: 10vh;
     width: 100%;
     overflow: hidden;
     line-height: 0;
 }
 .custom-shape-divider-bottom-1642954063-A {
     position: absolute;
-    top: 14vh;
+    top: 10.15vh;
     left: 0;
+    height: 10vh;
     width: 100%;
     overflow: hidden;
     line-height: 0;
@@ -122,21 +124,22 @@
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 33px;
 }
 
 .custom-shape-divider-top-1642953899-B {
     position: absolute;
-    top: 84vh;
+    top: 76vh;
     left: 0;
+    height: 10vh;
     width: 100%;
     overflow: hidden;
     line-height: 0;
 }
 .custom-shape-divider-bottom-1642954063-B {
     position: absolute;
-    top: 80vh;
+    top: 66.15vh;
     left: 0;
+    height: 10vh;
     width: 100%;
     overflow: hidden;
     line-height: 0;
@@ -147,7 +150,6 @@
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 33px;
 }
 
 .main {
@@ -183,7 +185,7 @@
 }
 
 .project-1, .project-3 {
-    position: relative;
+        position: relative;
         left: 27vw;
         width: 68vw;
         margin-top:10%;
@@ -196,6 +198,30 @@
         width: 68vw;
         margin-top:10%;
         border-radius: 15px;
+}
+
+@media  screen and (min-width: 480px) {
+    .main__projects {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        
+        &__image {
+            width:40vw;
+        }
+        &__shelf {
+            width:40vw;
+        }
+        &__inner {
+            width:40vw;
+        }
+
+    }
+    .project-1, .project-2, .project-3, .project-4 {
+        position: static;
+        width: 40vw;
+        margin: 4vh 4vh 4vh 4vh;
+    }
 }
 
 .about {

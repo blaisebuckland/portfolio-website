@@ -13,8 +13,8 @@
 
 .intro {
   width: 100%;
-  height: 65vh;
-  margin-top: 8vh;
+  height: 56vh;
+  margin: 8vh 0 8vh 0;
   background-image: url("./images/light-sparkle.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -31,14 +31,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20vh;
+    height: 10vh;
+    margin-bottom: 2vh;
+    
 }
 
 
 .main {
-
   
-    &__project {
+    &__projects {
         &__image {
             width: 68vw;
             height: 100%;
@@ -91,6 +92,7 @@
                 transform: translateY(0);
             }
         }
+
     }
         
 
