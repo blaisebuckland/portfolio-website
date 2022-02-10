@@ -7,18 +7,53 @@
      &__logo{
         position: absolute;
         left: 5vw;
+        
         &__1 {
            position: relative;
-           top: -3px;
             font-family: Island Moments;
-            font-size: 8vh;
+            font-size: 53px;
+
+            @media screen and (min-width: 768px) and (max-width: 990px) {
+                font-size: 64px;
+            }
+
+            @media screen and (min-width: 991px) {
+                font-size: 75px;
+            }
         }
         &__2 {
             position: relative;
             left: -12px;
-            font-size: 6vh;
+            top: 3px;
+            font-size: 38px;
+            font-weight: lighter;
+
+            @media screen and (min-width: 768px)and (max-width: 990px) {
+                font-size: 45px;
+            }
+
+            @media screen and (min-width: 991px) {
+                font-size: 53px;
+                left: -15px;
+            }
         }
+
+        &__nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 40vw;
+            font-size: 25px;
+
+            @media screen and (min-width: 991px) {
+            font-size: 28px;
+            }
+        }
+        
+        
      }
+
+     
 
      &__menu {
          position: fixed;
@@ -96,6 +131,7 @@
       text-align: center;
       margin-left: 5vw;
       margin-top:10px;
+      margin-bottom: 5vw;
       padding: 3px;
       box-shadow: $color-black 2px 2px;
     }
@@ -171,12 +207,10 @@
 
     &__heading::before {
         right: 5vw;
-       
     }
 
     &__heading::after {
         left: 5vw;
-       
     }
 }
 
