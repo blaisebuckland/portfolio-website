@@ -7,7 +7,7 @@
      &__logo{
         position: absolute;
         left: 5vw;
-        
+/* because 2 fonts are used, they need to be different sizes and be positioned slightly differently to make them match and line up correctly*/
         &__1 {
            position: relative;
             font-family: Island Moments;
@@ -39,7 +39,7 @@
          }
         
         }
-        
+
         &__links {
             display: flex;
             justify-content: space-between;
@@ -49,8 +49,13 @@
 
             @media screen and (min-width: 991px) {
             font-size: 28px;
+            
+        }
+
+/* make nav links disappear when vw is small */
+        @media  screen and (max-width: 768px) {
+                display: none;
             }
-        
      }
 
      
@@ -61,7 +66,8 @@
          font-size: 6vh;
          z-index: 999;
     }
-/*
+/* have taken side nav out for now, will add back in later. JS to make this work?
+
       &__sideNav {
           background: $color-primary-light;
           position: fixed;
@@ -98,15 +104,8 @@
       }
       
 
-
-@media  screen and (max-width: 768px) {
-    .nav__links {
-        display: none;}
-    }
-
 .intro {
     &__image {
-        height: 80vh;
         width: 100%;
     }
   
@@ -140,43 +139,37 @@
     position: absolute;
     top: 20vh;
     left: 0;
-    height: 10vh;
     width: 100%;
+    height: 20vh;
     overflow: hidden;
     line-height: 0;
 }
 .custom-shape-divider-bottom-1642954063-A {
     position: absolute;
-    top: 10.15vh;
+    top: 0.13vh; /* the 0.13 vh eliminates the gap between the wave shapes */
     left: 0;
-    height: 10vh;
     width: 100%;
+    height: 20vh; 
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
-
-}
-.custom-shape-divider-bottom-1642954063-A svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
 }
 
 .custom-shape-divider-top-1642953899-B {
     position: absolute;
-    top: 76vh;
+    top: 80vh;
     left: 0;
-    height: 10vh;
     width: 100%;
+    height: 20vh;
     overflow: hidden;
     line-height: 0;
 }
 .custom-shape-divider-bottom-1642954063-B {
     position: absolute;
-    top: 66.15vh;
+    top: 60.13vh;
     left: 0;
-    height: 10vh;
     width: 100%;
+    height: 20vh;
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
@@ -194,6 +187,8 @@
         text-align: center;
         margin-bottom: 4vh;
     }
+
+/* this creates the lines running "through" the titles */
 
     &__heading::before, &__heading::after {
         content: "";
