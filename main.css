@@ -17,12 +17,12 @@ h2 {
 
 .nav {
   height: 10vh;
-  margin: 2vh 5vw 10vh 5vw;
+  margin: 2vh 5vw 0vh 5vw;
 }
 
 .intro {
   width: 100%;
-  height: 56vh;
+  height: 60vh;
   margin: 8vh 0 8vh 0;
   background-image: url("./images/light-sparkle.jpg");
   background-size: cover;
@@ -38,9 +38,9 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 12vh;
+  height: 10vh;
   font-size: 30px;
-  margin-bottom: 1vh;
+  margin-bottom: 2vh;
 }
 
 #image-container {
@@ -62,8 +62,8 @@ h2 {
 }
 .main__container__projects__inner {
   position: absolute;
-  width: 68vw;
-  color: #EBEBEB;
+  width: 100%;
+  height: 100%;
   font-size: 20px;
   background: rgba(42, 38, 39, 0.6);
   border-radius: 15px;
@@ -83,6 +83,7 @@ h2 {
   opacity: 1;
 }
 .main__container__projects__inner > * {
+  color: #EBEBEB;
   transform: translateY(50px);
   transition: transform 0.3s;
 }
@@ -116,7 +117,8 @@ h2 {
   justify-content: center;
   align-items: center;
   font-size: 6vh;
-  /*
+  /* have taken side nav out for now, will add back in later. JS to make this work?
+
         &__sideNav {
             background: $color-primary-light;
             position: fixed;
@@ -154,6 +156,7 @@ h2 {
 .nav__logo {
   position: absolute;
   left: 5vw;
+  /* because 2 fonts are used, they need to be different sizes and be positioned slightly differently to make them match and line up correctly*/
 }
 .nav__logo__1 {
   position: relative;
@@ -194,10 +197,16 @@ h2 {
   align-items: center;
   width: 40vw;
   font-size: 25px;
+  /* make nav links disappear when vw is small */
 }
 @media screen and (min-width: 991px) {
   .nav__links {
     font-size: 28px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav__links {
+    display: none;
   }
 }
 .nav__menu {
@@ -207,13 +216,7 @@ h2 {
   z-index: 999;
 }
 
-@media screen and (max-width: 768px) {
-  .nav__links {
-    display: none;
-  }
-}
 .intro__image {
-  height: 80vh;
   width: 100%;
 }
 .intro__heading {
@@ -243,45 +246,40 @@ h2 {
   position: absolute;
   top: 20vh;
   left: 0;
-  height: 10vh;
   width: 100%;
+  height: 20vh;
   overflow: hidden;
   line-height: 0;
 }
 
 .custom-shape-divider-bottom-1642954063-A {
   position: absolute;
-  top: 10.15vh;
+  top: 0.13vh;
+  /* the 0.13 vh eliminates the gap between the wave shapes */
   left: 0;
-  height: 10vh;
   width: 100%;
+  height: 20vh;
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1642954063-A svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-}
-
 .custom-shape-divider-top-1642953899-B {
   position: absolute;
-  top: 76vh;
+  top: 80vh;
   left: 0;
-  height: 10vh;
   width: 100%;
+  height: 20vh;
   overflow: hidden;
   line-height: 0;
 }
 
 .custom-shape-divider-bottom-1642954063-B {
   position: absolute;
-  top: 66.15vh;
+  top: 60.13vh;
   left: 0;
-  height: 10vh;
   width: 100%;
+  height: 20vh;
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
@@ -293,6 +291,9 @@ h2 {
   width: calc(100% + 1.3px);
 }
 
+.main {
+  /* this creates the lines running "through" the titles */
+}
 .main__heading {
   font-family: "Poppins", verdana;
   text-align: center;
