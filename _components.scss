@@ -36,9 +36,11 @@
                 font-size: 53px;
                 left: -15px;
             }
+         }
+        
         }
-
-        &__nav {
+        
+        &__links {
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -48,8 +50,6 @@
             @media screen and (min-width: 991px) {
             font-size: 28px;
             }
-        }
-        
         
      }
 
@@ -219,37 +219,38 @@
 }
 
 .project-1, .project-3 {
-        position: relative;
-        left: 27vw;
-        width: 68vw;
-        margin-top:10%;
-        border-radius: 15px;
+    position: relative;
+    left: 27vw;
+    width: 68vw;
+    margin-top:10%;
+    border-radius: 15px;
 }
 
 .project-2, .project-4 {
     position: relative;
-        left: 5vw;
-        width: 68vw;
-        margin-top:10%;
-        border-radius: 15px;
+    left: 5vw;
+    width: 68vw;
+    margin-top:10%;
+    border-radius: 15px;
 }
 
 @media  screen and (min-width: 480px) {
-    .main__projects {
+    .main__container {
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        
-        &__image {
-            width:40vw;
-        }
-        &__shelf {
-            width:40vw;
-        }
-        &__inner {
-            width:40vw;
-        }
 
+        &__projects {
+            &__image {
+                width:40vw;
+            }
+            &__shelf {
+                width:40vw;
+            }
+            &__inner {
+                width:40vw;
+            }
+        }
     }
     .project-1, .project-2, .project-3, .project-4 {
         position: static;

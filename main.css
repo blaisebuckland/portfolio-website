@@ -19,18 +19,6 @@ h2 {
   height: 10vh;
   margin: 2vh 5vw 10vh 5vw;
 }
-.nav__links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 40vw;
-  font-size: 25px;
-}
-@media screen and (min-width: 991px) {
-  .nav__links {
-    font-size: 28px;
-  }
-}
 
 .intro {
   width: 100%;
@@ -55,28 +43,32 @@ h2 {
   margin-bottom: 1vh;
 }
 
-.main__projects__image {
+#image-container {
+  position: relative;
+}
+
+.main__container__projects__image {
   width: 68vw;
   height: 100%;
   border: solid 2px #2A2627;
   border-radius: 15px;
-  object-fit: contain;
+  object-fit: cover;
+  display: block;
 }
-.main__projects__shelf {
+.main__container__projects__shelf {
   width: 68vw;
   height: 1.7vh;
   box-shadow: 0px 2px 1px #4e474a;
 }
-.main__projects__inner {
+.main__container__projects__inner {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 68vw;
-  height: 100%;
   color: #EBEBEB;
-  font-size: 3.65vw;
+  font-size: 20px;
   background: rgba(42, 38, 39, 0.6);
   border-radius: 15px;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -84,20 +76,20 @@ h2 {
   opacity: 0;
   transition: opacity 0.3s;
 }
-.main__projects__inner:hover {
+.main__container__projects__inner:hover {
   opacity: 1;
 }
-.main__projects__inner:active {
+.main__container__projects__inner:active {
   opacity: 1;
 }
-.main__projects__inner > * {
+.main__container__projects__inner > * {
   transform: translateY(50px);
   transition: transform 0.3s;
 }
-.main__projects__inner:hover > * {
+.main__container__projects__inner:hover > * {
   transform: translateY(0);
 }
-.main__projects__inner:active > * {
+.main__container__projects__inner:active > * {
   transform: translateY(0);
 }
 
@@ -196,7 +188,7 @@ h2 {
     left: -15px;
   }
 }
-.nav__logo__nav {
+.nav__links {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -204,7 +196,7 @@ h2 {
   font-size: 25px;
 }
 @media screen and (min-width: 991px) {
-  .nav__logo__nav {
+  .nav__links {
     font-size: 28px;
   }
 }
@@ -343,18 +335,18 @@ h2 {
 }
 
 @media screen and (min-width: 480px) {
-  .main__projects {
+  .main__container {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
   }
-  .main__projects__image {
+  .main__container__projects__image {
     width: 40vw;
   }
-  .main__projects__shelf {
+  .main__container__projects__shelf {
     width: 40vw;
   }
-  .main__projects__inner {
+  .main__container__projects__inner {
     width: 40vw;
   }
 
