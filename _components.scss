@@ -123,7 +123,7 @@
     &__heading {
         font-family: $font-display;
         text-align: center;
-        margin-bottom: 4vh;
+        margin-bottom: 6vh;
     }
     &__heading::before, &__heading::after { 
         /* this creates the lines running "through" the titles */
@@ -224,23 +224,23 @@
 
         &__projects {
             &__image {
-                width:40vw;
+                width:35vw;
             }
             &__shelf {
-                width:40vw;
+                width:35vw;
             }
             &__inner {
                 &__title {
-                    font-size: 3vw;
+                    font-size: 2.25vw;
                 }
                 &__description {
-                    font-size: 2.25vw;
+                    font-size: 2vw;
                 }
                 &__list {
                     column-gap: 60px;
 
                     &__item {
-                        font-size: 2.25vw;
+                        font-size: 2vw;
                     }
                 }
             }
@@ -255,23 +255,23 @@
             flex-wrap: wrap;
 
             &__image {
-                width:40vw;
+                width:35vw;
             }
             &__shelf {
-                width:40vw;
+                width:35vw;
             }
             &__inner {
                 &__title {
-                    font-size: 2.5vw;
+                    font-size: 2.25vw;
                 }
                 &__description {
-                    font-size: 2.25vw;
+                    font-size: 2vw;
                 }
                 &__list {
                     column-gap: 70px;
 
                     &__item {
-                        font-size: 2.25vw;
+                        font-size: 2vw;
                     }
                 }
             }
@@ -280,7 +280,7 @@
 
     .project-1, .project-2, .project-3, .project-4 {
         position: static;
-        width: 40vw;
+        width: 35vw;
         margin: 4vh auto 4vh auto;
     }
 }
@@ -290,8 +290,8 @@
         font-family: $font-display;
         text-align: center;
         white-space: nowrap;
-        margin-bottom: 4vh;
-        margin-top: 4vh;
+        margin-bottom: 6vh;
+        margin-top: 6vh;
     }
     &__heading::before, &__heading::after {
         content: "";
@@ -309,17 +309,20 @@
         left: 5vw;  
     }
     &__image {
-        width: 50vw;
+        height: 40vh;
         border-radius: 15px;
         border: solid 2px $color-black;
     }
     &__description {
         text-align: center;
         margin: 4vh 5vw 4vh 5vw;
-        font-size: 4vw;
+        font-size: 18px;
         @media  screen and (min-width: 768px) {
-            font-size: 2.25vw;
+            font-size: 24px;
         }
+        @media screen and (min-width: 991px) {
+            font-size: 28px;
+         }
     }
 }
 
