@@ -207,10 +207,42 @@
     &__heading::after {
         left: 5vw;
     }
-}
 
-.project-title, .project-description {
-    text-align: center;
+    &__container {
+        &__projects {
+            &__inner {
+                &__title {
+                    text-align: center;
+                    font-size: 5vw;
+                    padding: 8px 0 8px 0;
+                }
+                &__description {
+                    text-align: center;
+                    font-size: 4vw;
+                    width: 90%;
+                }
+                &__list {
+                    margin: 8px 10px 8px 10px;
+                    list-style: circle;
+                    display: flex;
+                    justify-content: space-evenly;
+                    column-gap: 40px;
+
+                    &__item {
+                        font-size: 4vw;
+                        color: $color-white;
+                        li {
+                            
+                        }
+                        a {
+                            color: $color-white;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
 }
 
 .project-1, .project-3 {
@@ -229,7 +261,7 @@
     border-radius: 15px;
 }
 
-@media  screen and (min-width: 480px) {
+@media  screen and (min-width: 768px) {
     .main__container {
         display: flex;
         justify-content: space-evenly;
@@ -243,14 +275,58 @@
                 width:40vw;
             }
             &__inner {
+                &__title {
+                    font-size: 3vw;
+                }
+                &__description {
+                    font-size: 2.25vw;
+                }
+                &__list {
+                    column-gap: 60px;
+
+                    &__item {
+                        font-size: 2.25vw;
+                    }
+                }
+            }
+          
+        }
+    }
+
+    @media  screen and (min-width: 991px) {
+        .main__container__projects {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+
+            &__image {
                 width:40vw;
+            }
+            &__shelf {
+                width:40vw;
+            }
+            &__inner {
+                &__title {
+                    font-size: 2.5vw;
+                }
+                &__description {
+                    font-size: 2.25vw;
+                }
+                &__list {
+                    column-gap: 70px;
+
+                    &__item {
+                        font-size: 2.25vw;
+                    }
+                }
             }
         }
     }
+
     .project-1, .project-2, .project-3, .project-4 {
         position: static;
         width: 40vw;
-        margin: 4vh 4vh 4vh 4vh;
+        margin: 4vh auto 4vh auto;
     }
 }
 
@@ -292,5 +368,24 @@
     &__description {
         text-align: center;
         margin: 4vh 5vw 4vh 5vw;
+        font-size: 4vw;
+
+        @media  screen and (min-width: 768px) {
+            font-size: 2.25vw;
+        }
+       
+    }
+}
+
+.footer {
+    a {
+        margin: 2.5vw;
+        font-size: 28px;
+        @media  screen and (min-width: 768px) {
+            font-size: 36px;
+        }
+        @media  screen and (min-width: 991px) {
+            font-size: 44px;
+        }
     }
 }
