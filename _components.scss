@@ -33,17 +33,18 @@
          }
         }
         &__links {
-            font-size: 25px;
-            @media screen and (min-width: 991px) {
-            font-size: 28px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             width: 40vw;
+            font-size: 25px;
+            
             /* make nav links disappear when vw is small */
             @media  screen and (max-width: 768px) {
                 display: none;
             }
+            @media screen and (min-width: 991px) {
+            font-size: 28px;
          }
         }
 
