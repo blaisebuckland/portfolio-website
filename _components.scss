@@ -53,6 +53,10 @@
          right: 5vw;
          font-size: 6vh;
          z-index: 999;
+
+         @media  screen and (min-width: 768px) {
+            display: none;
+        }
     }
 }
 /* have taken side nav out for now, will add back in later. JS to make this work?
